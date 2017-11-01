@@ -1,0 +1,11 @@
+{
+  "name": "student-council-site",
+  "version": "1.0.0",
+  "description": "Stuco Site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Justin Ziegelmueller",
+  "license": "MIT"
+}

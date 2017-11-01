@@ -1,0 +1,1 @@
+function hideURLbar(){window.scrollTo(0,1)}addEventListener("load",function(){setTimeout(hideURLbar,0)},!1),jQuery(document).ready(function(o){o(".scroll").click(function(t){t.preventDefault(),o("html,body").animate({scrollTop:o(this.hash).offset().top},1500)})});

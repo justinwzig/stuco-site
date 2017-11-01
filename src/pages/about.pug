@@ -1,0 +1,234 @@
+doctype html
+html
+	head
+		title NCP Student Council
+		link(href="css/bootstrap.css", rel="stylesheet", type="text/css")
+		// jQuery (necessary for Bootstrap's JavaScript plugins)
+		script(src="js/jquery.min.js")
+		// Custom Theme files
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet", href="css/chocolat.css", type="text/css", media="screen")
+		// Custom Theme files
+		// -- start-smoth-scrolling--
+		script(type="text/javascript", src="js/move-top.js")
+		script(type="text/javascript", src="js/easing.js")
+		script(type="text/javascript").
+			jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1500);
+			});
+			});
+		// -- start-smoth-scrolling--
+		// -- <meta name="viewport" content="width=device-width, initial-scale=1">--
+		script(type="application/x-javascript").
+			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+		// --start-top-nav-script--
+		script.
+			$(function() {
+			var pull 		= $('#pull');
+			menu 		= $('nav ul');
+			menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+			e.preventDefault();
+			menu.slideToggle();
+			});
+			$(window).resize(function(){
+			var w = $(window).width();
+			if(w > 320 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+			}
+			});
+			});
+		// --//End-top-nav-script--
+	body
+		script#_fancybar_js(async="", type="text/javascript", src="//cdn.fancybar.net/ac/fancybar.js?zoneid=1502&serve=C6ADVKE&placement=w3layouts")
+		#top.bg
+			// --- start-header--
+			#home.header
+				.top-header
+					.container
+						.logo
+							// if you have a logo for the top bar, shove it here
+						// --start-top-nav--
+						nav.top-nav
+							ul.top-nav
+								li
+									a(href="index.html", title="Home") Home
+								li.active
+									a(href="about.html", title="About") About
+								li
+									a(href="minutes.html") Minutes
+								li
+									a(href="events.html") Events
+								li
+									a(href="resources.html") Resources
+								li
+									a(href="contact.html") Contact
+								// --<li><a href="elections2017.html" title="2017 Elections">2017 Elections</a></li>--
+							a#pull(href="#")
+								img(src="img/nav-icon.png", title="menu")
+						.clearfix  
+			// --- //End-header--
+			// -- header-info --
+			.header-info.text-center
+				.container
+					#stuco-logo
+						a(href="#")
+							img(src="img/stuco logo sized.png", title="")
+		#team.team
+			.container
+				.team-head.text-center
+					h4
+						| About 
+						span us
+					br
+					p
+						| The Northside College Prep Student Council's main purpose is to represent the student body, keep the student body informed, and promote a positive student life in the school.
+					p
+						u
+							a(href="constitution.html") Read the full constitution...
+					br
+				.team-head.text-center
+					h4
+						| our 
+						span team
+				// team-members
+				.team-members.text-center
+					.col-md-4
+						.team-member
+							img(src="img/mindren1617.gif", title="name")
+							h5
+								span  Mindren 
+								| Lu
+							label President - Adv. 810
+					.col-md-4
+						.team-member
+							img(src="img/emma1617.gif", title="name")
+							h5
+								span  Emma 
+								| Williamson
+							label Vice President - Adv. 908
+					.col-md-4
+						.team-member
+							img(src="img/matthew1617.gif", title="name")
+							h5
+								span  Matthew 
+								| Villalon
+							label Secretary - Adv. 903
+					.col-md-4
+						.team-member
+							img(src="img/ibraheem1617.gif", title="name")
+							h5
+								span  Ibraheem 
+								| Khan
+							label Treasurer - Adv. 810
+					.col-md-4
+						.team-member
+							img(src="img/justin1617.gif", title="name")
+							h5
+								span  Justin 
+								| Ziegelmueller
+							label PR Director - Adv. 804	
+					.col-md-4
+						.team-member
+							img(src="img/llorenz1617.gif", title="name")
+							h5
+								span  Llorenz 
+								| Meliton
+							label Webmaster - Adv. 903
+					.col-md-4
+						.team-member
+							img(src="img/esther1617.gif", title="name")
+							h5
+								span  Esther 
+								| Kim
+							label Marketing Director - Adv. 809
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  Dylan 
+								| Garcia
+							label Senior Senator - Adv. 803
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  Madeline 
+								| Meade
+							label Senior Senator - Adv. 808
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  Yale 
+								| Kolin
+							label Junior Senator - Adv. 907
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  Sahithi 
+								| Gangavarapu
+							label Junior Senator - Adv. 907
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  Fiona 
+								| Collins
+							label Sophomore Senator - Adv. 002
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  Ruba 
+								| Memon
+							label Sophomore Senator - Adv. 006
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  
+							label Freshman Senator - Adv.
+					.col-md-4
+						.team-member
+							img(src="img/Stuco Logo FOR HEADSHOTS.PNG", title="name")
+							h5
+								span  
+							label Freshman Senator - Adv.
+					.clearfix  
+				// - team-members -
+		// - team -
+		.clearfix  
+		.clearfix  
+		// - wedo-grids
+		// - we do --
+		script(src="js/jquery.chocolat.js")
+		// light-box-files
+		script(type="text/javascript").
+			$(function() {
+			$('.img-top a').Chocolat();
+			});
+		// -- footer --
+		.footer.text-center
+			// ADD STUDENT COUNCIL LOGO HERE
+			// <a href="#"><img src="img/footer-logo.png" title="daisy" /></a>
+			p.copy-right
+				strong © 2016 Northside College Prep Student Council
+			script(type="text/javascript").
+				$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+				*/
+				$().UItoTop({ easingType: 'easeOutCubic' });
+				});
+			a#toTop(href="#", style="display: block;")
+				span#toTopHover(style="opacity: 1;")  
+		// -- footer --
