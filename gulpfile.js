@@ -16,10 +16,10 @@ const scripts = '.js'
 const rawcss = '.css'
 
 gulp.task('html', function () {
-  return gulp.src(source + html, {basedir: 'src'}, {base: 'src'})
+  return gulp.src(['!src/includes/*', '!src/layouts/*', source + html])
     .pipe(pug())
-    .pipe(gulp.dest(clientOutput))
-})
+    .pipe(gulp.dest('docs/'))
+})  
 
 gulp.task('styles', function () {
   return gulp.src(source + styles)
