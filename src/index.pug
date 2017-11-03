@@ -1,46 +1,47 @@
 extends layouts/basic.pug
 
 block content
-	#about.about
-	.container
-		.about-head.text-center
-			h3
-				| Northside 
-				span Updates 
-		// - about-grids --
-		.about-grids(style="text-align:center;")
-			.col-md-3.centered-block
-				.about-grid.text-center
-					h3
-						| What did you think of ClubHub 2017?
-						br
-						label  
-					p
-						| Let us know how we did by filling out this short survey 
-						strong
-							a(href="https://docs.google.com/forms/d/e/1FAIpQLScGBbwASAHqw5wNizhVp_pkXIiHPJpoTYJ4MaCiPwFGaQLR5w/viewform?usp=sf_link", target="_blank") here
-						| .
-			.col-md-3.centered-block
-				.about-grid.text-center
-					h3
-						| Does your club need money?
-						br
-						label  
-					p
-						| Apply for a grant through Student Council to help raise funds. Simply visit our 
-						strong
-							a(href="http://www.nscollegeprep.cps.k12.il.us/ncphs/activities/clubs/scouncil/resources.html") resources page
-						|  to learn how to apply!
-			.col-md-3.centered-block
-				.about-grid.text-center
-					h3
-						| Have any suggestions for Student Council?
-						br
-						label  
-					p
-						| Your opinion matters! Let us know how we can improve the school by filling out 
-						a(href="https://docs.google.com/a/cps.edu/forms/d/e/1FAIpQLSdILpzVvhPcXaHx964eyqLwdZx3YiGdnya0Ucs2Bfe8FBZUYA/viewform", target="_blank", title="Feedback Form!")
-							strong this form
-						| .
-			.clearfix  
-		// - about-grids --
+	.top
+		#about.about
+		.container
+			.about-head.text-center
+				h3
+					| Northside 
+					span Updates 
+			// - about-grids --
+			.about-grids(style="text-align:center;")
+				.col-md-3.centered-block
+					.about-grid.text-center
+						h3
+							| What did you think of ClubHub 2017?
+							br
+							label  
+						p
+							| Let us know how we did by filling out this short survey 
+							strong
+								a(href="https://docs.google.com/forms/d/e/1FAIpQLScGBbwASAHqw5wNizhVp_pkXIiHPJpoTYJ4MaCiPwFGaQLR5w/viewform?usp=sf_link", target="_blank") here
+							| .
+				.col-md-3.centered-block
+					.about-grid.text-center
+						h3
+							| Does your club need money?
+							br
+							label  
+						p
+							| Apply for a grant through Student Council to help raise funds. Simply visit our 
+							strong
+								a(href="http://www.nscollegeprep.cps.k12.il.us/ncphs/activities/clubs/scouncil/resources.html") resources page
+							|  to learn how to apply!
+				.col-md-3.centered-block
+					.about-grid.text-center
+						h3
+							| Have any suggestions for Student Council?
+							br
+							label  
+						p
+							| Your opinion matters! Let us know how we can improve the school by filling out 
+							a(href="https://docs.google.com/a/cps.edu/forms/d/e/1FAIpQLSdILpzVvhPcXaHx964eyqLwdZx3YiGdnya0Ucs2Bfe8FBZUYA/viewform", target="_blank", title="Feedback Form!")
+								strong this form
+							| .
+				.clearfix  
+			// - about-grids --
