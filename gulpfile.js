@@ -16,9 +16,9 @@ const scripts = '.js'
 const rawcss = '.css'
 
 gulp.task('html', function () {
-  return gulp.src(['!src/includes/*', '!src/layouts/*', source + html])
+  return gulp.src(['!src/includes/*.pug', '!src/layouts/*.pug', source + html])
     .pipe(pug())
-    .pipe(gulp.dest('docs/'))
+    .pipe(gulp.dest(clientOutput))
 })  
 
 gulp.task('styles', function () {

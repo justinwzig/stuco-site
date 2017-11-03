@@ -1,0 +1,25 @@
+extends ../layouts/basic.pug
+
+block content
+
+	#wedo.wedo
+		.container
+			.wedo-head.text-center
+				h3
+					span Calendar
+			// - wedo-grids --
+			.wedo-grids
+				iframe#calendar(src="https://calendar.google.com/calendar/embed?src=ncp.studentcouncil%40gmail.com&ctz=America/Chicago", width="800", height="600", frameborder="0", scrolling="no")
+			// - wedo-grids
+			.wedo-head.text-center
+				h3
+					span Photos
+			ul
+				li
+					h4
+						strong
+							a(href="photos20162017.html", title="Click this link to view the archives!") 2016-2017 Archives
+				li
+					h4
+						strong
+							a(href="photos20152016.html", title="Click this link to view the archives!") 2015-2016 Archives
