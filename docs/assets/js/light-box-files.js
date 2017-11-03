@@ -1,1 +1,3 @@
-$(function(){$(".img-top a").Chocolat()});
+$(function() {
+    $('.img-top a').Chocolat();
+});

@@ -14,6 +14,8 @@ const html = '.pug'
 const styles = '.styl'
 const scripts = '.js'
 const rawcss = '.css'
+const assets = 'assets/*'
+const img =  'img/*'
 
 gulp.task('html', function () {
   return gulp.src(['!src/includes/*.pug', '!src/layouts/*.pug', source + html])
@@ -38,7 +40,7 @@ gulp.task('scripts', function () {
   return gulp.src(source + scripts)
     .pipe(uglify())
     .pipe(gulp.dest(clientOutput))
-})
+}) 
 
 gulp.task('nodemon', function () {
   nodemon({basedir: 'src'})
@@ -48,6 +50,7 @@ gulp.task('watch', function () {
   gulp.watch(source + html, ['html'])
   gulp.watch(source + styles, ['styles'])
   gulp.watch(source + scripts, ['scripts'])
+  gulp.watch(source + rawcss, ['rawcss'])
 })
 
 gulp.task('default', ['watch', 'html', 'scripts', 'styles', 'rawcss'])
