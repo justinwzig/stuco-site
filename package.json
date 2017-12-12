@@ -7,5 +7,8 @@
     "test": "gulp"
   },
   "author": "Justin Ziegelmueller",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-util": "^3.0.8"
+  }
 }

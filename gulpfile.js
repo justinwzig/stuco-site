@@ -8,6 +8,8 @@ const uglify = require('gulp-uglify')
 const stylus = require('gulp-stylus')
 const cleanCSS = require('gulp-clean-css')
 
+const util = require('gulp-util');
+
 const source = 'src/**/*' 
 const clientOutput = 'docs'
 const html = '.pug'
@@ -17,28 +19,32 @@ const rawcss = '.css'
 const assets = 'assets/*'
 const img =  'img/*'
 
+var config = {
+  production: !!util.env.production
+};
+
 gulp.task('html', function () {
   return gulp.src(['!src/includes/*.pug', '!src/layouts/*.pug', source + html])
-    .pipe(pug())
+    .pipe(config.production ? pug({pretty: true}) : pug({pretty: false}))
     .pipe(gulp.dest(clientOutput))
 })  
 
 gulp.task('styles', function () {
   return gulp.src(source + styles)
     .pipe(stylus())
-    .pipe(cleanCSS())
+    .pipe(config.production ? cleanCSS() : util.noop())
     .pipe(gulp.dest(clientOutput))
 })
 
 gulp.task('rawcss', function () {
   return gulp.src(source + rawcss)
-    .pipe(cleanCSS())
+    .pipe(config.production ? cleanCSS() : util.noop())
     .pipe(gulp.dest(clientOutput))
 })
 
 gulp.task('scripts', function () {
   return gulp.src(source + scripts)
-    .pipe(uglify())
+    .pipe(config.production ? uglify() : util.noop())
     .pipe(gulp.dest(clientOutput))
 }) 
 
