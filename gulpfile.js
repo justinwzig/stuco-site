@@ -11,7 +11,7 @@ const cleanCSS = require('gulp-clean-css')
 const util = require('gulp-util');
 
 const source = 'src/**/*' 
-const clientOutput = 'docs'
+const clientOutput = ''
 const html = '.pug'
 const styles = '.styl'
 const scripts = '.js'
