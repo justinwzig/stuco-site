@@ -1,7 +1,6 @@
 extends ../layouts/basic.pug
 
 block content
-
 	#wedo.wedo
 		.container
 			.wedo-head.text-center
@@ -15,19 +14,19 @@ block content
 							| Contacting Student Council
 						h2
 							| If you have questions or suggestions, contact Student Council by emailing 
-							strong ncp.studentcouncil@gmail.com
+							strong ncp.studentcouncil [at] gmail (dot) com
 							|  or by filling out the form below.
 						br
-						iframe(src="https://docs.google.com/a/cps.edu/forms/d/e/1FAIpQLSdILpzVvhPcXaHx964eyqLwdZx3YiGdnya0Ucs2Bfe8FBZUYA/viewform?embedded=true", width="760", height="500", frameborder="0", marginheight="0", marginwidth="0") Loading...
+						iframe(id="contact-form-embed" src="https://docs.google.com/a/cps.edu/forms/d/e/1FAIpQLSdILpzVvhPcXaHx964eyqLwdZx3YiGdnya0Ucs2Bfe8FBZUYA/viewform?embedded=true", width="100%", height="650", frameborder="0", marginheight="0", marginwidth="0") Loading...
 						h2
 							| You may also contact Student Council's moderator, Ms. Veronica Hetler by emailing 
-							strong vkhetler@cps.edu
+							strong vkhetler [at] cps (dot) edu
 							| .
 						h4
 							label
 							| Contacting the Webmaster
 						h2
-							| If you notice any bugs, typos, or otherwise incorrect information, contact the webmaster by emailing lameliton@cps.edu.
+							| If you notice any bugs, typos, or otherwise incorrect information, contact the webmaster by emailing lameliton [at] cps (dot) edu.
 						br
 						h4
 							label
@@ -46,5 +45,5 @@ block content
 						h2
 							strong Snapchat:
 							|  ncp_stuco
-						img(src="/assets/img/snapcode.jpg", alt="Snapcode", title="Stuco Snapcode", height="400")
+						img(src="/img/snapcode.jpg", alt="Snapcode", title="Stuco Snapcode", height="400")
 							
